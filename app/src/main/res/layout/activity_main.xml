@@ -27,4 +27,12 @@
         android:layout_alignTop="@+id/playButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/pauseButton"
+        android:layout_toStartOf="@+id/pauseButton" />
 </RelativeLayout>
