@@ -29,7 +29,11 @@ public class MainActivity extends AppCompatActivity {
 
         volumeControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
-            Log.i("I am your father");
+        @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
+            Log.i("seekBar val", progress);
+        }
 
         });
     }
