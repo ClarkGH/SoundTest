@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
-            Log.i("seekBar val", progress);
+            Log.i("seekBar val", Integer.toString(progress));
         }
 
         });
