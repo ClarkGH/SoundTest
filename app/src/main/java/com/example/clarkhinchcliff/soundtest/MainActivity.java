@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.SeekBar;
 
@@ -29,11 +30,16 @@ public class MainActivity extends AppCompatActivity {
 
         volumeControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
-        @Override
+            @Override
+            public void onStopTrackingTouch(SeekBar seekbar){
+                    
+            }
+
+            @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
-            Log.i("seekBar val", Integer.toString(progress));
-        }
+                Log.i("seekBar val", Integer.toString(progress));
+            }
 
         });
     }
